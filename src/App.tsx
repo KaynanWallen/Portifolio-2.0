@@ -7,19 +7,29 @@ import ContentCenter from './components/ContentCenter/ContentCenter'
 import ContentMain from './components/ContentMain/ContentMain'
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'about'>('home');
 
+  //Manipulação de pastas dentro do layout
+  const [currentPage, setCurrentPage] = useState<string>('home');
   const handlePageChange = (page: string) => {
-    setCurrentPage(page as 'home' | 'about');
+    setCurrentPage(page as string);
   };
-  
+
+  //Manipulação da div de pastas
+
+  const [pastFolder, setPastFolder] = useState<boolean>(true);
+
+  const handlePastChange = () => {
+    setPastFolder(!pastFolder);
+  };
+
+
   return (
     <StyledApp>
       <Header />
       <main>
-        <ContentLeft />
-        <ContentCenter handlePageChange={handlePageChange}/>
-        <ContentMain currentPage={currentPage}/>
+        <ContentLeft handlePastChange={handlePastChange}/>
+        <ContentCenter handlePageChange={handlePageChange} pastFolder={pastFolder}/>
+        <ContentMain currentPage={currentPage} />
       </main>
     </StyledApp>
   )

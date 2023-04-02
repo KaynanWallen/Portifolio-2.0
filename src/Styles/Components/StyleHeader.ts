@@ -16,4 +16,18 @@ export const StyledHeader = styled.header`
         height: 30px;
         width: 30px;
     }
+    @media (max-width: 700px) {
+        section {
+            display: none;
+        }
+        p{
+            margin: 0 auto;
+        }
+        svg {
+            margin-left: 0;
+        }
+    }
+    @media (max-width: 400px) {
+        font-size: 16px;
+    }
 `

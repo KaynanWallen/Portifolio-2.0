@@ -21,7 +21,12 @@ import {
 
 import { useState } from 'react';
 
-const ContentCenter = ({ handlePageChange }: { handlePageChange: (page: string) => void }) => {
+interface Props {
+  handlePageChange: (page: string) => void;
+  pastFolder: boolean;
+}
+
+const ContentCenter = ({ handlePageChange, pastFolder}:  Props) => {
   //REALIZAÇÃO DAS FUNÇÕES PARA MINIMIZAR ABAS//
   const [showPortfolio, setShowPortfolio] = useState(false);
   const [showSchools, setShowSchools] = useState(false);
@@ -47,7 +52,6 @@ const ContentCenter = ({ handlePageChange }: { handlePageChange: (page: string) 
 
   const handleAboutClick = () => {
     setShowAbout(!showAbout);
-    handlePageChange('about');
   };
 
   const handleHtmlClick = () => {
@@ -56,7 +60,9 @@ const ContentCenter = ({ handlePageChange }: { handlePageChange: (page: string) 
 
 
   return (
-    <StyledContentCenter>
+    <StyledContentCenter style={{
+      display: pastFolder === true ? "" : "none",
+    }}>
       <div className='Explorer'>
         <p>EXPLORER</p>
       </div>
@@ -82,10 +88,10 @@ const ContentCenter = ({ handlePageChange }: { handlePageChange: (page: string) 
               <VscFolder /> <span> Schools</span>
             </section>
             <section className='subpasta_arquivos' style={{ display: showSchools ? 'flex' : 'none' }}> 
-              <section className='hover'>
+              <section className='hover' onClick={() => handlePageChange('Schools_Cursos')}>
                 <DiReact /> <span> Cursos.tsx </span>
               </section>
-              <section className='hover'>
+              <section className='hover' onClick={() => handlePageChange('Schools_Escolaridade')}>
                 <DiReact /> <span> Escolaridade.tsx </span>
               </section>
             </section>
@@ -98,10 +104,10 @@ const ContentCenter = ({ handlePageChange }: { handlePageChange: (page: string) 
               <VscFolder /> <span> Skills </span>
             </section>
             <section className='subpasta_arquivos' style={{ display: showSkills ? 'flex' : 'none' }}> 
-              <section className='hover'>
+              <section className='hover' onClick={() => handlePageChange('Skills_front')}>
                 <DiReact /> <span> Front_End.js </span>
               </section>
-              <section className='hover'>
+              <section className='hover' onClick={() => handlePageChange('Skills_back')}>
                 <DiReact /> <span> Back_End.js </span>
               </section>
             </section>
@@ -115,13 +121,13 @@ const ContentCenter = ({ handlePageChange }: { handlePageChange: (page: string) 
             <VscFolder /> <span> Projetos </span>
           </section>
           <section className='subpasta_projects' style={{ display: showProjects ? 'flex' : 'none' }}>
-            <section className='projects hover'>
+            <section className='projects hover' onClick={() => handlePageChange('Projetos_portifolio')}>
               <TbBrandTypescript /> <span> Portifolio.ts </span>
             </section>
-            <section className='projects hover'>
+            <section className='projects hover' onClick={() => handlePageChange('Projetos_gamehub')}>
               <TbBrandTypescript /> <span> GameHub.ts </span>
             </section>
-            <section className='projects hover'>
+            <section className='projects hover' onClick={() => handlePageChange('Projetos_GameFinder')}>
               <TbBrandTypescript /> <span> GameFinder.ts </span>
             </section>
           </section>

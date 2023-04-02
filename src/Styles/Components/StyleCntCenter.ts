@@ -85,9 +85,9 @@ export const StyledContentCenter = styled.div`
                 align-items: center;
             }
         }
-    }
 
     .html {
         margin-left: .5rem;
     }
+
 `

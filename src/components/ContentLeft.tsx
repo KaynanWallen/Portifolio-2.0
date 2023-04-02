@@ -10,11 +10,20 @@ import {
   VscSettingsGear,
 
 } from 'react-icons/vsc'
-const ContentLeft = () => {
+
+interface Props {
+  handlePastChange: (state: boolean) => void;
+}
+
+const ContentLeft = ({ handlePastChange}:  Props) => {
+
+
+
+  
   return (
     <StyledContentLeft>
       <section>
-          <VscFiles />
+          <VscFiles onClick={() => handlePastChange(!true)}/>
           <VscSearch />
           <VscSourceControl />
           <VscDebugRerun />
