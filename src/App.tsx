@@ -7,15 +7,19 @@ import ContentCenter from './components/ContentCenter/ContentCenter'
 import ContentMain from './components/ContentMain/ContentMain'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentPage, setCurrentPage] = useState<'home' | 'about'>('home');
 
+  const handlePageChange = (page: string) => {
+    setCurrentPage(page as 'home' | 'about');
+  };
+  
   return (
     <StyledApp>
       <Header />
       <main>
         <ContentLeft />
-        <ContentCenter />
-        <ContentMain />
+        <ContentCenter handlePageChange={handlePageChange}/>
+        <ContentMain currentPage={currentPage}/>
       </main>
     </StyledApp>
   )

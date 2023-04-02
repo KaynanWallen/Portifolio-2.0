@@ -24,10 +24,11 @@ export const StyledContentCenter = styled.div`
             width: 30px;
             color: gray;
         }
-
+        cursor: pointer;
     }
     > section {
         margin-left: 12px;
+        cursor: pointer;
     }
     .align{
         display: flex;
@@ -35,6 +36,11 @@ export const StyledContentCenter = styled.div`
         gap: 0 0.3rem;
     }
     
+    .hover:hover{
+        border-width: 0px 0px 2px 0px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.3);
+    }
     .arquivos {
         margin-top:12px;
         display: flex;
@@ -51,6 +57,7 @@ export const StyledContentCenter = styled.div`
             display: flex;
             gap: 0 0.3rem;
         }
+        }
         .subpasta {
             margin-left:1rem;
             margin-top: 5px;
@@ -65,8 +72,7 @@ export const StyledContentCenter = styled.div`
                     display: flex;
                     align-items: center;
                 }
-            }
-            
+            }            
         }
         .subpasta_projects {
             margin-top: 5px;
