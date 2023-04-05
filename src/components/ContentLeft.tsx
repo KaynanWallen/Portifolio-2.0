@@ -16,14 +16,10 @@ interface Props {
 }
 
 const ContentLeft = ({ handlePastChange}:  Props) => {
-
-
-
-  
   return (
     <StyledContentLeft>
       <section>
-          <VscFiles onClick={() => handlePastChange(!true)}/>
+          <VscFiles onClick={() => handlePastChange(!true)} className='HoverFilesDiv'/>
           <VscSearch />
           <VscSourceControl />
           <VscDebugRerun />

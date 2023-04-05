@@ -1,8 +1,11 @@
 import React from 'react'
+import LayoutContent from '../../../Styles/Layout/LayoutContent';
 
-const Portifolio = () => {
+
+function Portifolio() {
   return (
-    <div>Portifolio</div>
+        <div>
+        </div>
   )
 }
 

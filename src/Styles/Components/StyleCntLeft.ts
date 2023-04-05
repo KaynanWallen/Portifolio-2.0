@@ -10,7 +10,6 @@ export const StyledContentLeft = styled.div`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 60px;
     gap: 1.5rem 0;
-
     svg {
         height: 30px;
         width: 30px;
@@ -29,4 +28,12 @@ export const StyledContentLeft = styled.div`
         align-items: center;
         gap: 1.5rem 0;
     }
+
+    .HoverFilesDiv:hover {
+        cursor: pointer;
+        height: 33px;
+        width: 33px;
+        color: #cccccc;
+    }
+    
 `
