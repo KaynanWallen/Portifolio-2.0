@@ -1,8 +1,13 @@
 import React from 'react'
 
+import LayoutContent from '../../../../Styles/Layout/LayoutContent'
+import { DataSkills } from '../../../../data/database';
+
 const Back_End = () => {
   return (
-    <div>Back_End</div>
+    <div>
+      <LayoutContent Array={DataSkills} />
+    </div>
   )
 }
 

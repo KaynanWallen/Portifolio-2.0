@@ -104,11 +104,8 @@ const ContentCenter = ({ handlePageChange, pastFolder}:  Props) => {
               <VscFolder /> <span> Skills </span>
             </section>
             <section className='subpasta_arquivos' style={{ display: showSkills ? 'flex' : 'none' }}> 
-              <section className='hover' onClick={() => handlePageChange('Skills_front')}>
-                <DiReact /> <span> Front_End.js </span>
-              </section>
               <section className='hover' onClick={() => handlePageChange('Skills_back')}>
-                <DiReact /> <span> Back_End.js </span>
+                <DiReact /> <span> SKills.js </span>
               </section>
             </section>
           </section>

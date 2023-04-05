@@ -12,5 +12,6 @@ export const StyledApp = styled.div`
     main > div {
         height: 100%;
     }
+    font-family: 'Changa One', cursive;
 
 `
