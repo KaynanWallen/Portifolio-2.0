@@ -6,7 +6,7 @@ import { DataEsolaridade } from '../../../../data/database';
 const Escolaridade = () => {
   return (
     <div>
-      <LayoutContent Array={DataEsolaridade} />
+      <h1>Escolaridade</h1>
     </div>
   )
 }

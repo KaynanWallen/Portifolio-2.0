@@ -1,13 +1,31 @@
-import React from 'react'
+import { StyledSkills } from "../../../../Styles/Components/StyledInfoContent/StyledSkills"
 
-import LayoutContent from '../../../../Styles/Layout/LayoutContent'
-import { DataSkills } from '../../../../data/database';
 
 const Back_End = () => {
   return (
-    <div>
-      <LayoutContent Array={DataSkills} />
-    </div>
+      <StyledSkills> 
+          <h1> Skills </h1>
+          <div className="skills">
+            <section>
+            </section>
+            <section>
+            </section>
+            <section>
+            </section>
+            <section>
+            </section>
+            <section>
+            </section>
+            <section>
+            </section>
+            <section>
+            </section>
+            <section>
+            </section>
+            <section>
+            </section>
+          </div>
+      </StyledSkills>
   )
 }
 

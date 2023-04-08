@@ -7,7 +7,7 @@ import LayoutContent from '../../../../Styles/Layout/LayoutContent'
 const Cursos = () => {
   return (
     <div>
-      <LayoutContent Array={DataCursos} />
+      <h1>Cursos</h1>
     </div>
   )
 }
