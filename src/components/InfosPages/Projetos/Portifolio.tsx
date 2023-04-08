@@ -18,7 +18,22 @@ function Portifolio() {
               <StyledButton buttonSize='md' buttonStyle='solid'> Ver Mais </StyledButton>
             </StyledCard>
             <StyledCard>
-              
+              <img src={githubfinder} />
+              <h2>GameHub</h2>
+              <p>Projeto consumindo API do GitHub</p>
+              <StyledButton buttonSize='md' buttonStyle='solid'> Ver Mais </StyledButton>
+            </StyledCard>
+            <StyledCard>
+              <img src={GameHub} />
+              <h2>Portfolio</h2>
+              <p>Projeto com visual baseado na Steam/EpicGames</p>
+              <StyledButton buttonSize='md' buttonStyle='solid'> Ver Mais </StyledButton>
+            </StyledCard>
+            <StyledCard>
+              <img src={LiberaryMovie} />
+              <h2>Portfolio</h2>
+              <p>Projeto para expor meus conhecimentos..</p>
+              <StyledButton buttonSize='md' buttonStyle='solid'> Ver Mais </StyledButton>
             </StyledCard>
           </section>
         </StyledProjetos>

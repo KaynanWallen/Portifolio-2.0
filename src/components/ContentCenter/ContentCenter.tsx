@@ -119,13 +119,7 @@ const ContentCenter = ({ handlePageChange, pastFolder}:  Props) => {
           </section>
           <section className='subpasta_projects' style={{ display: showProjects ? 'flex' : 'none' }}>
             <section className='projects hover' onClick={() => handlePageChange('Projetos_portifolio')}>
-              <TbBrandTypescript /> <span> Portifolio.ts </span>
-            </section>
-            <section className='projects hover' onClick={() => handlePageChange('Projetos_gamehub')}>
-              <TbBrandTypescript /> <span> GameHub.ts </span>
-            </section>
-            <section className='projects hover' onClick={() => handlePageChange('Projetos_GameFinder')}>
-              <TbBrandTypescript /> <span> GameFinder.ts </span>
+              <TbBrandTypescript /> <span> Projetos.ts </span>
             </section>
           </section>
         </section>
