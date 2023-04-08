@@ -6,7 +6,7 @@ export const StyledSkills = styled.div `
     align-items: center;
     div {
         margin-top: 5rem;
-        width: 1000px;
+        width: 75%;
         height: auto;
         display: flex;
         flex-wrap: wrap;

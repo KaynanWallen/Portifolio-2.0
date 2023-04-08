@@ -1,13 +1,15 @@
-import React from 'react'
-
-import LayoutContent from '../../../../Styles/Layout/LayoutContent'
-import { DataEsolaridade } from '../../../../data/database';
+import { StyledCard } from '../../../../Styles/Components/StyledInfoContent/GlobalCard';
+import { StyledEscolaridade } from '../../../../Styles/Components/StyledInfoContent/StyledEscolaridade';
 
 const Escolaridade = () => {
   return (
-    <div>
+    <StyledEscolaridade>
       <h1>Escolaridade</h1>
-    </div>
+      <section>
+        <StyledCard></StyledCard>
+        <StyledCard></StyledCard>
+      </section>
+    </StyledEscolaridade>
   )
 }
 

@@ -1,14 +1,15 @@
-import React from 'react'
-
-import { DataCursos } from '../../../../data/database';
-import LayoutContent from '../../../../Styles/Layout/LayoutContent'
-
+import { StyledCard } from "../../../../Styles/Components/StyledInfoContent/GlobalCard"
+import { StyledCursos } from "../../../../Styles/Components/StyledInfoContent/StyledCursos"
 
 const Cursos = () => {
   return (
-    <div>
+    <StyledCursos>
       <h1>Cursos</h1>
-    </div>
+      <section>
+        <StyledCard></StyledCard>
+        <StyledCard></StyledCard>
+      </section>
+    </StyledCursos>
   )
 }
 

@@ -26,10 +26,9 @@ export const StyledButton = styled.button<iStyledButtonProps> `
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
-    font-family: "Poppins" , sans-serif;
+    font-family: 'Changa One';
     font-size: 17px;
     transition: 0.4s;
-
     border-radius: 12px;
     cursor: pointer;
     ${({buttonSize}) => {
@@ -57,7 +56,7 @@ export const StyledButton = styled.button<iStyledButtonProps> `
         switch(buttonStyle){
             case 'solid':
                 return css `
-                    background: $blue;
+                    background: #292929;
                     color: white;
                 `
             case 'outline':
