@@ -8,9 +8,8 @@ export const StyledHomeContent = styled.div `
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    box-sizing: border-box;
     .infos {
-        width: 520px;
+        width: 100%;
         margin-left: 40px;
         div {
             margin-left: 40px;
@@ -32,4 +31,35 @@ export const StyledHomeContent = styled.div `
         }
     }
 
+    @media (max-width: 800px) {
+        .infos {
+            h3 {
+                font-size: 3.5rem;
+            }
+            h4 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media (max-width: 720px) {
+        .infos {
+            margin-left: 0px;
+            text-align: center;
+            div {
+                margin-left: 0px;
+
+                section {
+                    margin-top: 16px;
+                    justify-content: center;
+                }
+            }
+            h3 {
+                font-size: 2.5rem;
+            }
+            h4 {
+                font-size: 1.2rem;
+            }
+        }
+    }
 `

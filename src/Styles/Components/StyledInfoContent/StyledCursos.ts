@@ -4,7 +4,9 @@ export const StyledCursos = styled.div `
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 85%;
     section {
+        height: 100%;
         margin-top: 5rem;
         width: 80%;
         height: auto;
@@ -13,5 +15,6 @@ export const StyledCursos = styled.div `
         justify-content: center;
         align-items: center;
         gap: 2rem 5rem;
+        overflow-y: auto;
     }
 `

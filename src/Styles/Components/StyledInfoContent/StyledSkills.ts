@@ -4,6 +4,7 @@ export const StyledSkills = styled.div `
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 90%;
     > div {
         margin-top: 5rem;
         width: 75%;
@@ -14,6 +15,7 @@ export const StyledSkills = styled.div `
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        overflow-y: auto;
         section {
             margin-top: 1rem;
             background: rgba(41, 41, 41, 0.8);

@@ -18,4 +18,9 @@ export const StyledCard = styled.div `
                 width: 85%;
                 height: 35%;
         }
+
+        @media (max-width: 768px) {
+                height: 400px;
+                width: 300px;
+        }
 `

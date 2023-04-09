@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import Header from './components/Header'
 import ContentLeft from './components/ContentLeft'
@@ -10,7 +10,11 @@ function App() {
 
   //Manipulação de pastas dentro do layout
   const [currentPage, setCurrentPage] = useState<string>('home');
+
   const handlePageChange = (page: string) => {
+    if (window.innerWidth < 600) {
+      setPastFolder(false)
+    }
     setCurrentPage(page as string);
   };
 
@@ -20,8 +24,16 @@ function App() {
 
   const handlePastChange = () => {
     setPastFolder(!pastFolder);
+    if (window.innerWidth < 600 ) {
+      setCurrentPage('null')
+    }
   };
 
+  useEffect(() => {
+    if (window.innerWidth < 600 ) {
+      setPastFolder(false);
+    }
+  },[])
 
   return (
     <StyledApp>
@@ -29,7 +41,7 @@ function App() {
       <main>
         <ContentLeft handlePastChange={handlePastChange}/>
         <ContentCenter handlePageChange={handlePageChange} pastFolder={pastFolder}/>
-        <ContentMain currentPage={currentPage} />
+        <ContentMain currentPage={currentPage} pastFolder={pastFolder}/>
       </main>
     </StyledApp>
   )

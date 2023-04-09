@@ -35,5 +35,4 @@ export const StyledContentLeft = styled.div`
         width: 33px;
         color: #cccccc;
     }
-    
 `

@@ -90,4 +90,7 @@ export const StyledContentCenter = styled.div`
         margin-left: .5rem;
     }
 
-`
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+`   

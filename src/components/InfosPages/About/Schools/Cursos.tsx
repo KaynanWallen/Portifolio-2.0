@@ -10,12 +10,12 @@ const Cursos = () => {
       <h1>Cursos</h1>
       <section>
         <StyledCard>
-          <img src={OneBitCode} />
-          <h2>Programador FullStack em JavaScript</h2>
-          <p>Tempo: +300 Horas</p>
-          <p>Inicio: 08/Agosto/2022</p>
-          <p>Termino: Andamento </p>
-          <StyledButton buttonSize='md' buttonStyle='solid'> Certificado </StyledButton>
+            <img src={OneBitCode} />
+            <h2>Programador FullStack em JavaScript</h2>
+            <p>Tempo: +300 Horas</p>
+            <p>Inicio: 08/Agosto/2022</p>
+            <p>Termino: Andamento </p>
+            <StyledButton buttonSize='md' buttonStyle='solid'> Certificado </StyledButton>
         </StyledCard>
         <StyledCard>
           <img src={Senai} />

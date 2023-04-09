@@ -9,7 +9,7 @@ import { StyledButton } from '../../../Styles/GlobalStyles';
 function Portifolio() {
   return (
         <StyledProjetos>
-          <h1>Meus projetinhos</h1>
+          <h1>Meus projetos</h1>
           <section>
             <StyledCard>
               <img src={Portfolio} />

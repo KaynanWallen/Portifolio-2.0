@@ -58,7 +58,6 @@ const ContentCenter = ({ handlePageChange, pastFolder}:  Props) => {
     handlePageChange('home');
   };
 
-
   return (
     <StyledContentCenter style={{
       display: pastFolder === true ? "" : "none",

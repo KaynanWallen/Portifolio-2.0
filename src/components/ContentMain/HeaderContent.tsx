@@ -4,7 +4,6 @@ import { StyledHeaderContent } from '../../Styles/Components/StyledContentMain/S
 const HeaderContent = () => {
   return (
     <StyledHeaderContent>
-        HeaderContent
     </StyledHeaderContent>
   )
 }

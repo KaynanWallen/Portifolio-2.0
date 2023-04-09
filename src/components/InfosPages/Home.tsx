@@ -3,7 +3,6 @@ import React from 'react'
 import {BsGithub, BsLinkedin} from 'react-icons/bs'
 import { StyledHomeContent } from '../../Styles/Components/StyledInfoContent/StyledHome'
 
-import imagem from '../../assets/HomeImage.png'
 const Home = () => {
   return (
       <StyledHomeContent>

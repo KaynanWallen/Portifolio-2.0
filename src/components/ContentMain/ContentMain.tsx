@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { StyledContentMain } from '../../Styles/Components/StyledContentMain/StyleCntMain'
 import HeaderContent from './HeaderContent'
 import Home from '../InfosPages/Home'
@@ -13,39 +13,42 @@ import { DataHome, DataCursos, DataEsolaridade, DataSkills, DataProjetos} from '
 
 type Props = {
   currentPage: string;
+  pastFolder: boolean;
 };
 
 
-const ContentMain = ({ currentPage }: Props) => {
+const ContentMain = ({ currentPage, pastFolder }: Props) => {
 
   const [buttonState, setButtonState] = useState<boolean>(true);
-
   const handlebuttonState = () => {
     setButtonState(!buttonState);
-    console.log(buttonState)
   };
 
+
   return (
-    <StyledContentMain>
+    <StyledContentMain style={{
+      width: currentPage === 'null' ? "100%" : "",
+    }}>
       <HeaderContent/> 
-      <section className='SectionButton'>
+      {/* <section className='SectionButton'>
         <StyledButton buttonSize='md' buttonStyle='outline' onClick={() => handlebuttonState()}>Alternar Tema </StyledButton>
-      </section>
-      {currentPage === 'home' && (
-        buttonState ? <Home /> : <LayoutContent Array={DataHome} />
-      )}
-      {currentPage === 'Schools_Cursos' && (
-        buttonState ? <Cursos /> : <LayoutContent Array={DataCursos} />
-      )}
-      {currentPage === 'Schools_Escolaridade' && (
-        buttonState ? <Escolaridade /> : <LayoutContent Array={DataEsolaridade} />
-      )}
-      {currentPage === 'Skills_back' && (
-        buttonState ? <Back_End /> : <LayoutContent Array={DataSkills} />
-      )}
-      {currentPage === 'Projetos_portifolio' && (
-        buttonState ? <Portifolio /> : <LayoutContent Array={DataProjetos} />
-      )}
+      </section> */}
+          {currentPage === 'home' && (
+            buttonState ? <Home /> : <LayoutContent Array={DataHome} />
+          )}
+          {currentPage === 'Schools_Cursos' && (
+            buttonState ? <Cursos /> : <LayoutContent Array={DataCursos} />
+          )}
+          {currentPage === 'Schools_Escolaridade' && (
+            buttonState ? <Escolaridade /> : <LayoutContent Array={DataEsolaridade} />
+          )}
+          {currentPage === 'Skills_back' && (
+            buttonState ? <Back_End /> : <LayoutContent Array={DataSkills} />
+          )}
+          {currentPage === 'Projetos_portifolio' && (
+          buttonState ? <Portifolio /> : <LayoutContent Array={DataProjetos} />
+          )}
+          {currentPage == 'null' && ''}
     </StyledContentMain>
   )
 }
