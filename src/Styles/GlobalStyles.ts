@@ -21,7 +21,8 @@ interface iStyledButtonProps {
     buttonStyle: "solid" | "outline";
 }
 
-export const StyledButton = styled.button<iStyledButtonProps> `
+export const StyledButton = styled.a<iStyledButtonProps> `
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -54,18 +55,18 @@ export const StyledButton = styled.button<iStyledButtonProps> `
 
     ${({buttonStyle}) => {
         switch(buttonStyle){
-            case 'solid':
+            case 'outline':
                 return css `
                     background: #292929;
                     color: white;
                 `
-            case 'outline':
+            case 'solid':
                 return css `
-                    border: 1px solid blue;
+                    border: 1px solid black;
                     background-color: transparent;
                     color: white;
                     &:hover{
-                        background-color: blue;
+                        background-color: rgb(0, 0, 0, 0.6);
                     }
                 `
         }

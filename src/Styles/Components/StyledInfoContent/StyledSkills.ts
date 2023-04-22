@@ -8,7 +8,7 @@ export const StyledSkills = styled.div `
     > div {
         margin-top: 5rem;
         width: 75%;
-        height: auto;
+        height: 500px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;

@@ -26,49 +26,49 @@ const Back_End = () => {
               <SiCss3 />
               <div> 
                 <h2> CSS </h2>
-                <p>  </p>
+                <p> Linguagem de Estilos </p>
               </div>
             </section>
             <section>
               <SiJavascript />
               <div> 
                 <h2> JavaScript </h2>
-                <p>  </p>
+                <p>  Linguagem de Programação </p>
               </div>
             </section>
             <section>
               <SiReact />
               <div> 
                 <h2> ReactJs </h2>
-                <p>  </p>
+                <p>  Biblioteca de programação javascript</p>
               </div>
             </section>
             <section>
               <SiTailwindcss />
               <div> 
                 <h2> Tailwindcss </h2>
-                <p>  </p>
+                <p> Framework CSS utilitário responsivo  </p>
               </div>
             </section>
             <section>
               <SiStyledcomponents />
               <div> 
                 <h2> StyledComponents </h2>
-                <p>  </p>
+                <p> Biblioteca CSS em JS para React</p>
               </div>
             </section>
             <section>
               <SiNodedotjs />
               <div> 
                 <h2> NodeJs </h2>
-                <p>  </p>
+                <p> Ambiente de Execução javaScript </p>
               </div>
             </section>
             <section>
               <SiMongodb />
               <div> 
                 <h2> MongoDB </h2>
-                <p>  </p>
+                <p>  Banco de dados NoSQL flexível </p>
               </div>
             </section>
           </div>

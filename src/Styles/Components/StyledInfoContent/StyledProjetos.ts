@@ -16,8 +16,21 @@ export const StyledProjetos = styled.div `
         align-items: center;
         gap: 2rem 5rem;
         div {
-            button {
-                margin-top: 2rem;
+            .Buttons {
+                width: 90%;
+                display: flex;
+                justify-content: space-around;
+
+                button {
+                }
+            }
+        }
+        .Linguagens {
+            width: 80%;
+            svg {
+                height: 30px;
+                width: 30px;
+                margin:0rem .5rem;
             }
         }
     }
