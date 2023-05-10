@@ -15,7 +15,6 @@ const Cursos = () => {
             <p>Tempo: +300 Horas</p>
             <p>Inicio: 08/Agosto/2022</p>
             <p>Termino: Andamento </p>
-            <StyledButton buttonSize='md' buttonStyle='solid'> Certificado </StyledButton>
         </StyledCard>
         <StyledCard>
           <img src={Senai} />
@@ -23,7 +22,6 @@ const Cursos = () => {
           <p>Tempo: 160 Horas</p>
           <p>Inicio: 17/Agosto/2022</p>
           <p>Termino: 17/Novembro/2022</p>
-          <StyledButton buttonSize='md' buttonStyle='solid'> Certificado </StyledButton>
         </StyledCard>
       </section>
     </StyledCursos>

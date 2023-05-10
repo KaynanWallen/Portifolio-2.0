@@ -12,19 +12,17 @@ const Escolaridade = () => {
       <section>
         <StyledCard>
           <img src={Etec} />
-          <h2>Análise e Desenvolvimento de Sistemas</h2>
-          <p>Tempo: 3 Trimestres</p>
+          <h2>Desenvolvimento de Sistemas</h2>
+          <p>Tempo: 3 Semestres</p>
           <p>Inicio: Fevereiro/2022</p>
           <p>Termino: Julho/2023 </p>
-          <StyledButton buttonSize='md' buttonStyle='solid'> Certificado </StyledButton>
         </StyledCard>
         <StyledCard>
           <img src={USF} />
           <h2>Análise e Desenvolvimento de Sistemas</h2>
-          <p>Tempo: 6 Trimestres</p>
+          <p>Tempo: 5 Semestres</p>
           <p>Inicio: Fevereiro/2023</p>
           <p>Termino: Julho/2025 </p>
-          <StyledButton buttonSize='md' buttonStyle='solid'> Certificado </StyledButton>
         </StyledCard>
       </section>
     </StyledEscolaridade>

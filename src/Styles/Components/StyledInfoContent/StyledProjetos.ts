@@ -15,6 +15,17 @@ export const StyledProjetos = styled.div `
         justify-content: center;
         align-items: center;
         gap: 2rem 5rem;
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #292929;  
+            border-radius: 20px;       
+        }
         div {
             .Buttons {
                 width: 90%;
@@ -34,5 +45,6 @@ export const StyledProjetos = styled.div `
             }
         }
     }
+
 
 `

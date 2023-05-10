@@ -29,6 +29,10 @@ export const StyledHomeContent = styled.div `
         h4 {
             font-size: 2rem;
         }
+        section {
+            margin-top: 20px;
+            cursor: pointer;
+        }
     }
 
     @media (max-width: 800px) {

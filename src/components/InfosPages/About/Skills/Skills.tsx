@@ -9,6 +9,9 @@ import {
   SiStyledcomponents,
   SiNodedotjs,
   SiMongodb,
+  SiNextdotjs,
+  SiGit,
+  SiLinux
 } from 'react-icons/si'
 const Back_End = () => {
   return (
@@ -69,6 +72,27 @@ const Back_End = () => {
               <div> 
                 <h2> MongoDB </h2>
                 <p>  Banco de dados NoSQL flexível </p>
+              </div>
+            </section>
+            <section>
+              <SiNextdotjs />
+              <div> 
+                <h2> NextJs </h2>
+                <p> Framework para desenvolver Front-End </p>
+              </div>
+            </section>
+            <section>
+              <SiGit />
+              <div> 
+                <h2> GIT </h2>
+                <p> Sistema de controle de versões distribuído </p>
+              </div>
+            </section>
+            <section>
+              <SiLinux />
+              <div> 
+                <h2> Linux </h2>
+                <p> Sistema Operacional </p>
               </div>
             </section>
           </div>

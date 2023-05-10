@@ -5,7 +5,7 @@ import Home from '../InfosPages/Home'
 import Cursos from '../InfosPages/About/Schools/Cursos'
 import Escolaridade from '../InfosPages/About/Schools/Escolaridade'
 import Back_End from '../InfosPages/About/Skills/Skills'
-import Portifolio from '../InfosPages/Projetos/Portifolio'
+import Portifolio from '../InfosPages/Projetos/Projetos'
 
 type Props = {
   currentPage: string;
