@@ -28,7 +28,7 @@ interface Props {
 
 const ContentCenter = ({ handlePageChange, pastFolder}:  Props) => {
   //REALIZAÇÃO DAS FUNÇÕES PARA MINIMIZAR ABAS//
-  const [showPortfolio, setShowPortfolio] = useState(false);
+  const [showPortfolio, setShowPortfolio] = useState(true);
   const [showSchools, setShowSchools] = useState(false);
   const [showSkills, setShowSkills] = useState(false);
   const [showProjects, setShowProjects] = useState(false);
